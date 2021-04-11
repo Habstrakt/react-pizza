@@ -13,7 +13,7 @@ const Home = ( {items}) => {
 						<h2 className="content__title">Все пиццы</h2>
 						<div className="content__items">
 								{
-										items.map(pizzaObj => <PizzaBlock key={pizzaObj.id} name={pizzaObj.name} imageUrl={pizzaObj.imageUrl}/>)
+										items.map(pizzaObj => <PizzaBlock key={pizzaObj.id} {...pizzaObj} />)
 								}
 						</div>
 				</div>
