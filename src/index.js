@@ -2,9 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import {BrowserRouter as Router} from "react-router-dom";
-import {createStore} from "redux";
+import store from "./redux/store"
 
 import './app.css';
+
+console.log(store.getState());
+
 
 
 ReactDOM.render(
