@@ -78,4 +78,8 @@ PizzaBlock.propTypes = {
 		name: PropTypes.string,
 };
 
+PizzaBlock.defaultProps = {
+		name: 'Название пиццы'
+}
+
 export default PizzaBlock;
