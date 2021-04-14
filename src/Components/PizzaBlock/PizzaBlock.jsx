@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import classNames from "classnames";
+import PropTypes from "prop-types";
 
 const PizzaBlock = ({name, imageUrl, price, types, sizes}) => {
 		const availableTypes = ['тонкое', 'традиционное'];
@@ -72,5 +73,9 @@ const PizzaBlock = ({name, imageUrl, price, types, sizes}) => {
 				</div>
 		)
 }
+
+PizzaBlock.propTypes = {
+		name: PropTypes.string,
+};
 
 export default PizzaBlock;

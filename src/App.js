@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {Route} from "react-router-dom";
+import axios from "axios";
+
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
-import axios from "axios";
 
 const App = () => {
 
@@ -25,5 +26,6 @@ const App = () => {
 				</div>
 		)
 }
+
 
 export default App;
