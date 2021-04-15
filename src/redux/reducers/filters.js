@@ -15,7 +15,7 @@ const filters = (state = initialState, action) => {
 				case 'SET_CATEGORY':
 						return {
 								...state,
-								categoryIndex: action.payload
+								category: action.payload
 						};
 		}
 		return state;
